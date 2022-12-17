@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:hsl(30, 38%, 92%);
+}
+.container{
+
+    height: 40px;
+    width: 600px;
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+.image-section img{
+    height: 420px;
+    width: 280px;   
+    border-radius: 5px 0 0 5px;
+}
+.text-section {
+    background-color: hsl(0, 0%, 100%) ;
+    height: 420px;
+    width: 280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 5px 5px 0;
+}
+.text-section h4, h1, h2, p, .price, .btn{
+    margin-top: 18px;
+}
+h1{
+    font-family: 'Fraunces', serif;
+    
+}
+.first p{
+    letter-spacing: 3px;
+}
+p{
+    color: rgb(158, 154, 154);
+    font-family: 'Montserrat', sans-serif;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.actual-price{
+    margin-right: 15px;
+    text-decoration: line-through;
+}
+.discount-price{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn button{
+    padding: 10px 69px;
+    border-radius: 5px;
+    border: 0;
+    background-color:hsl(158, 36%, 37%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-weight: 600 ;
+}
+.btn button:hover{
+    background-color:hsl(158, 35%, 25%);
+    cursor: pointer;
+}
+.text{
+    margin-left: 5px;
+    margin-top: 6px;
+}
+@media screen and (max-width: 500px) {
+    .container{
+        display: block;
+        margin-top: -110px;
+    }
+    .image-section img{
+        height: 200px;
+        width: 300px;   
+        border-radius: 10px 10px 0px 0px;
+        object-fit: cover;
+    }
+    .text-section{
+        background-color: hsl(0, 0%, 100%);
+        height: 420px;
+        width: 300px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        border-radius: 0 0 10px 10px;
+        margin-top: -5px;
+    }
+}
